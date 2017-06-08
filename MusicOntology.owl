@@ -1,0 +1,535 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.semanticweb.org/irwansyah/ontologies/2015/4/MusicOntology"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="http://www.semanticweb.org/irwansyah/ontologies/2015/4/MusicOntology">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Album"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Artist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AudioFile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#AudioFileType"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Billboard"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Chord"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Composer"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Country"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Genre"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Group"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Instrument"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Lyric"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Music"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Person"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Playlist"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Rating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Solo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Song"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Timeline"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#User-Rating"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VideoFile"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#VideoFileType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#byCountry"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createdBy"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#createdWithInstrument"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAlbum"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAudioFile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasAudioFileType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasChord"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasCitizenship"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGenre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasLyric"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasPlaylist"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasRating"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasSong"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasTimeline"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVideoFile"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasVideoFileType"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#sing"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#singBy"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Afire_Love"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Burn"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#EdSheeran"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ellie_Goulding"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Halcyon_Days"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Light"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Nina"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#One"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Ritual"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#X"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#You_My_Everything"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#Don&apos;t"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#Artist"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Billboard"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Composer"/>
+        <Class IRI="#Person"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Group"/>
+        <Class IRI="#Artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Music"/>
+        <Class IRI="#Song"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Solo"/>
+        <Class IRI="#Artist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Song"/>
+        <Class IRI="#Playlist"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#User-Rating"/>
+        <Class IRI="#Rating"/>
+    </SubClassOf>
+    <DisjointClasses>
+        <Class IRI="#Album"/>
+        <Class IRI="#AudioFile"/>
+        <Class IRI="#AudioFileType"/>
+        <Class IRI="#Chord"/>
+        <Class IRI="#Country"/>
+        <Class IRI="#Genre"/>
+        <Class IRI="#Instrument"/>
+        <Class IRI="#Lyric"/>
+        <Class IRI="#Person"/>
+        <Class IRI="#Playlist"/>
+        <Class IRI="#Rating"/>
+        <Class IRI="#Timeline"/>
+        <Class IRI="#VideoFile"/>
+        <Class IRI="#VideoFileType"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Artist"/>
+        <Class IRI="#Composer"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Billboard"/>
+        <Class IRI="#User-Rating"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Group"/>
+        <Class IRI="#Solo"/>
+    </DisjointClasses>
+    <DisjointClasses>
+        <Class IRI="#Lyric"/>
+        <Class IRI="#Music"/>
+    </DisjointClasses>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Afire_Love"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Burn"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Solo"/>
+        <NamedIndividual IRI="#EdSheeran"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Solo"/>
+        <NamedIndividual IRI="#Ellie_Goulding"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Album"/>
+        <NamedIndividual IRI="#Halcyon_Days"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Light"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Nina"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#One"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Ritual"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Album"/>
+        <NamedIndividual IRI="#X"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#You_My_Everything"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Song"/>
+        <NamedIndividual IRI="#Don&apos;t"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAlbum"/>
+        <NamedIndividual IRI="#EdSheeran"/>
+        <NamedIndividual IRI="#X"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sing"/>
+        <NamedIndividual IRI="#EdSheeran"/>
+        <NamedIndividual IRI="#Afire_Love"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sing"/>
+        <NamedIndividual IRI="#EdSheeran"/>
+        <NamedIndividual IRI="#Don&apos;t"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sing"/>
+        <NamedIndividual IRI="#EdSheeran"/>
+        <NamedIndividual IRI="#One"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sing"/>
+        <NamedIndividual IRI="#EdSheeran"/>
+        <NamedIndividual IRI="#Nina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasAlbum"/>
+        <NamedIndividual IRI="#Ellie_Goulding"/>
+        <NamedIndividual IRI="#Halcyon_Days"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sing"/>
+        <NamedIndividual IRI="#Ellie_Goulding"/>
+        <NamedIndividual IRI="#You_My_Everything"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sing"/>
+        <NamedIndividual IRI="#Ellie_Goulding"/>
+        <NamedIndividual IRI="#Ritual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sing"/>
+        <NamedIndividual IRI="#Ellie_Goulding"/>
+        <NamedIndividual IRI="#Burn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#sing"/>
+        <NamedIndividual IRI="#Ellie_Goulding"/>
+        <NamedIndividual IRI="#Light"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSong"/>
+        <NamedIndividual IRI="#Halcyon_Days"/>
+        <NamedIndividual IRI="#You_My_Everything"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSong"/>
+        <NamedIndividual IRI="#Halcyon_Days"/>
+        <NamedIndividual IRI="#Ritual"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSong"/>
+        <NamedIndividual IRI="#Halcyon_Days"/>
+        <NamedIndividual IRI="#Burn"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSong"/>
+        <NamedIndividual IRI="#Halcyon_Days"/>
+        <NamedIndividual IRI="#Light"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSong"/>
+        <NamedIndividual IRI="#X"/>
+        <NamedIndividual IRI="#Nina"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSong"/>
+        <NamedIndividual IRI="#X"/>
+        <NamedIndividual IRI="#One"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSong"/>
+        <NamedIndividual IRI="#X"/>
+        <NamedIndividual IRI="#Afire_Love"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#hasSong"/>
+        <NamedIndividual IRI="#X"/>
+        <NamedIndividual IRI="#Don&apos;t"/>
+    </ObjectPropertyAssertion>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#singBy"/>
+        <ObjectProperty IRI="#sing"/>
+    </InverseObjectProperties>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#byCountry"/>
+        <Class IRI="#Rating"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createdBy"/>
+        <Class IRI="#Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#createdWithInstrument"/>
+        <Class IRI="#Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAlbum"/>
+        <Class IRI="#Artist"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAudioFile"/>
+        <Class IRI="#Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasAudioFileType"/>
+        <Class IRI="#AudioFile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasChord"/>
+        <Class IRI="#Music"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasCitizenship"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasLyric"/>
+        <Class IRI="#Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasPlaylist"/>
+        <Class IRI="#Person"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasRating"/>
+        <Class IRI="#Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasSong"/>
+        <Class IRI="#Album"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasTimeline"/>
+        <Class IRI="#Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVideoFile"/>
+        <Class IRI="#Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasVideoFileType"/>
+        <Class IRI="#VideoFile"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#sing"/>
+        <Class IRI="#Artist"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#singBy"/>
+        <Class IRI="#Song"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#byCountry"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createdBy"/>
+        <Class IRI="#Composer"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#createdWithInstrument"/>
+        <Class IRI="#Instrument"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAlbum"/>
+        <Class IRI="#Album"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAudioFile"/>
+        <Class IRI="#AudioFile"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasAudioFileType"/>
+        <Class IRI="#AudioFileType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasChord"/>
+        <Class IRI="#Chord"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasCitizenship"/>
+        <Class IRI="#Country"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGenre"/>
+        <Class IRI="#Genre"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasLyric"/>
+        <Class IRI="#Lyric"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasPlaylist"/>
+        <Class IRI="#Playlist"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasRating"/>
+        <Class IRI="#Rating"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasSong"/>
+        <Class IRI="#Song"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasTimeline"/>
+        <Class IRI="#Timeline"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVideoFile"/>
+        <Class IRI="#VideoFileType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasVideoFileType"/>
+        <Class IRI="#VideoFileType"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#sing"/>
+        <Class IRI="#Song"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#singBy"/>
+        <Class IRI="#Artist"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
